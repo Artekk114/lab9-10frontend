@@ -1,0 +1,73 @@
+.card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.routeInfo {
+  flex: 2;
+}
+
+.trainNumber {
+  font-weight: bold;
+  color: #1a73e8;
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.cities {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.timeInfo {
+  flex: 1;
+  text-align: center;
+  color: #5f6368;
+}
+
+.action {
+  flex: 1;
+  text-align: right;
+}
+
+.bookButton {
+  background-color: #1a73e8;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.bookButton:hover {
+  background-color: #1557b0;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .timeInfo, .action {
+    text-align: left;
+    width: 100%;
+  }
+}
