@@ -1,0 +1,11 @@
+.mapContainer { margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 12px; }
+.legend { display: flex; gap: 1rem; margin-bottom: 1.5rem; justify-content: center; font-weight: 500; }
+.legend span { padding: 0.3rem 0.8rem; border-radius: 4px; color: white; font-size: 0.9rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); gap: 10px; }
+.seat { height: 50px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: transform 0.1s; color: white; }
+.seat:active:not(:disabled) { transform: scale(0.95); }
+.seat:disabled { cursor: not-allowed; opacity: 0.8; }
+.free { background-color: #2ecc71; }
+.free:hover:not(:disabled) { background-color: #27ae60; }
+.selected { background-color: #3498db; }
+.booked { background-color: #e74c3c; }

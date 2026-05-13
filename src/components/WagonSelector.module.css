@@ -1,0 +1,5 @@
+.container { margin-bottom: 2rem; }
+.wagonList { display: flex; gap: 1rem; flex-wrap: wrap; }
+.wagonBtn { padding: 0.8rem 1.5rem; border: 2px solid #1a73e8; background: white; color: #1a73e8; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.2s; }
+.wagonBtn:hover { background: #f0f4fc; }
+.wagonBtn.active { background: #1a73e8; color: white; }
