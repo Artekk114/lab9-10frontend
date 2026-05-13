@@ -1,0 +1,7 @@
+.bookingContainer { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+.backBtn { background: transparent; border: none; color: #1a73e8; cursor: pointer; font-size: 1rem; margin-bottom: 1rem; padding: 0; }
+.backBtn:hover { text-decoration: underline; }
+.header { margin-bottom: 2rem; border-bottom: 2px solid #e0e0e0; padding-bottom: 1rem; }
+.header h1 { margin: 0 0 0.5rem 0; color: #2c3e50; }
+.contentGrid { display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; }
+@media (max-width: 900px) { .contentGrid { grid-template-columns: 1fr; } }

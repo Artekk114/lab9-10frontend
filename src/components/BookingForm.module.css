@@ -1,0 +1,8 @@
+.form { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #e0e0e0; }
+.inputGroup { margin-bottom: 1.2rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.inputGroup label { font-weight: 600; color: #2c3e50; }
+.inputGroup input { padding: 0.8rem; border: 1px solid #bdc3c7; border-radius: 6px; font-size: 1rem; }
+.inputGroup input:focus { outline: none; border-color: #3498db; }
+.submitBtn { width: 100%; padding: 1rem; background: #e67e22; color: white; border: none; border-radius: 6px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: background 0.2s; }
+.submitBtn:hover:not(:disabled) { background: #d35400; }
+.submitBtn:disabled { background: #bdc3c7; cursor: not-allowed; }

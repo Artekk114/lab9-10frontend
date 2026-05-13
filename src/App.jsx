@@ -1,21 +1,22 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
-// Заглушка для 10 лабораторної роботи
-const BookingPagePlaceholder = () => (
-  <div style={{ padding: '2rem', textAlign: 'center' }}>
-    <h2>Сторінка бронювання місць (Лабораторна 10)</h2>
-    <p>Тут буде схема вагону та форма бронювання.</p>
-  </div>
-);
+import Home from './pages/Home';
+import Booking from './pages/Booking';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/booking/:trainId" element={<BookingPagePlaceholder />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/booking/:trainId" element={<Booking />} />
+      </Routes>
+      
+      {/* Контейнер для сповіщень */}
+      <ToastContainer position="top-right" autoClose={3000} />
+    </>
   );
 }
 
